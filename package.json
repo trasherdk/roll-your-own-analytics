@@ -20,8 +20,8 @@
     "expect.js": "^0.3.1",
     "jest": "^23.2.0",
     "supertest": "^3.1.0",
-    "webpack": "^4.14.0",
-    "webpack-cli": "^3.0.8"
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -29,8 +29,7 @@
     "cors": "^2.8.4",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "npm": "^6.1.0",
-    "sequelize": "^4.38.0",
+    "sequelize": "^6.3.5",
     "sqlite3": "^4.0.9"
   }
 }
