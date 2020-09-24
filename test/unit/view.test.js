@@ -14,7 +14,7 @@ describe('models/view', () => {
             return this.View.create({
                 daysSinceEpoch: 1, time: 1, hitId: '123abc', viewerId: '456def',
                 pathName: '/', query: '', referrer: '', timeOnPage: 5
-            }).bind(this).then((view) => {
+            }).then((view) => {
                 expect(view.hitId).to.equal('123abc')
             })
         })
@@ -26,6 +26,7 @@ describe('models/view', () => {
             return models.View.findOne({ where: { hitId: '123abc' } })
                 .then(view => {
                     expect(view).not.to.equal(null)
+                    expect(view.hitId).to.equal('123abc')
                 })
         })
     })
